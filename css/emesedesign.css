@@ -8,6 +8,13 @@
     bottom: 100%;
 }
 
+div.h2,
+div.h4 {
+  color: #7e3880;
+}
+
+
+
 /* HEADER */
 
 a.logo {
@@ -23,4 +30,28 @@ a.logo {
   .hamburger-icon {
     display: inline-block;
   }
+}
+
+
+/* CONTENT */
+
+#about-me-wrapper {
+  width: 100%;
+  background-color: #ede9f7;
+}
+
+#about-me div.h4 {
+  text-align: center;
+}
+
+#about-me .simple-article {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 1px;
+  color: #a793a7;
+}
+
+#about-me #profile-pic {
+  width: 100%;
 }
