@@ -1,0 +1,17 @@
+/* GENERIC */
+
+.accent-color {
+  color: #7e3880;
+}
+
+.sorting-menu.style-1 a.active:after {
+    bottom: 100%;
+}
+
+/* HEADER */
+
+a.logo {
+  color: #a793a7;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+}
