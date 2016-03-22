@@ -15,3 +15,12 @@ a.logo {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
 }
+.hamburger-icon {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .hamburger-icon {
+    display: inline-block;
+  }
+}

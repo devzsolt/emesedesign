@@ -385,10 +385,7 @@ header.light .hamburger-icon span{background: #fff;}
 .hamburger-icon span:nth-child(2){top: 14px;}
 .hamburger-icon span:nth-child(3){top: 20px;}
 .hamburger-icon:hover span:nth-child(3){top: 22px;}
-.hamburger-icon.open-navigation{margin-right: 15px;}
-.hamburger-icon.open-navigation:last-child{margin-right: 0;}
-.hamburger-icon.open-navigation span{background: #444; width: 3px; height: 3px; border-radius: 50%; -webkit-border-radius: 50%; left: 13px;}
-.open-navigation{display: none;}
+.hamburger-icon{display: none;}
 header .follow{display: none; position: absolute; left: 0; bottom: 5px; width: 100%; text-align: left; padding: 0 15px; white-space: nowrap;}
 header .follow .title, header .follow .entry{margin: 0;}
 
