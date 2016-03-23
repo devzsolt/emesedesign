@@ -55,3 +55,14 @@ a.logo {
 #about-me #profile-pic {
   width: 100%;
 }
+
+
+/* FOOTER */
+
+footer {
+  background-color: #4a404a;
+}
+
+footer .copyright>.simple-article {
+  color: #a793a7;
+}
