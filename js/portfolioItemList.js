@@ -125,14 +125,14 @@ $(window).load(function() {
     // beforeResize event fires each time size of gallery viewport updates
     gallery.listen('beforeResize', function() {
       // calculate real pixels when size changes
-      realViewportWidth = gallery.viewportSize.x * window.devicePixelRatio;
+      realViewportWidth = gallery.viewportSize.x /* * window.devicePixelRatio*/;
 
       // switch dynamically on window.resize
       // Find out if current images need to be changed
-      if(useLargeImages && realViewportWidth < 1000) {
+      if (useLargeImages && realViewportWidth < 900) {
         useLargeImages = false;
         imageSrcWillChange = true;
-      } else if(!useLargeImages && realViewportWidth >= 1000) {
+      } else if(!useLargeImages && realViewportWidth >= 900) {
         useLargeImages = true;
         imageSrcWillChange = true;
       }
