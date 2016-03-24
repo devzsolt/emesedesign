@@ -13,6 +13,10 @@ div.h4 {
   color: #7e3880;
 }
 
+.sorting-menu.style-1 a:hover,
+.sorting-menu.style-1 a.active {
+    color: #7e3880;
+}
 
 
 /* HEADER */
@@ -32,8 +36,26 @@ a.logo {
   }
 }
 
+@media (min-width: 992px) {
+  nav>ul>li>a {
+    color: #a793a7;
+  }
+  nav>ul>li:hover>a,
+  nav>ul>li.active>a {
+    color: #7e3880;
+  }
+}
+
 
 /* CONTENT */
+
+.simple-article.grey {
+  color: #a793a7;
+}
+
+.sorting-menu.style-1 {
+  color: #a793a7;
+}
 
 #about-me-wrapper {
   width: 100%;
@@ -49,7 +71,6 @@ a.logo {
   font-size: 20px;
   line-height: 36px;
   letter-spacing: 1px;
-  color: #a793a7;
 }
 
 #about-me #profile-pic {
