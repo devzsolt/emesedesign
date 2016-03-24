@@ -1,4 +1,4 @@
-/* GENERIC */
+/**************** GENERIC ****************/
 
 .accent-color {
   color: #7e3880;
@@ -19,7 +19,24 @@ div.h4 {
 }
 
 
-/* HEADER */
+.button.type-3 {
+  color: #000;
+  font-size: 16px;
+  line-height: 22px;
+}
+.button.type-3:hover {
+  color: #7e3880;
+}
+.button.type-3:hover:before {
+  border-left: 1px #7e3880 solid;
+  border-bottom: 1px #7e3880 solid;
+}
+.button.type-3:hover:after {
+  border-right: 1px #7e3880 solid;
+  border-top: 1px #7e3880 solid;
+}
+
+/****************** HEADER *******************/
 
 a.logo {
   color: #a793a7;
@@ -47,15 +64,20 @@ a.logo {
 }
 
 
-/* CONTENT */
+/************* CONTENT *************/
 
 .simple-article.grey {
   color: #a793a7;
 }
 
+/* PORTFOLIO */
+
 .sorting-menu.style-1 {
   color: #a793a7;
 }
+
+
+/* ABOUT ME */
 
 #about-me-wrapper {
   width: 100%;
@@ -78,7 +100,45 @@ a.logo {
 }
 
 
-/* FOOTER */
+/* CONTACT */
+
+.contacts-form-1-align {
+  margin-top: 0;
+  top: 0;
+}
+
+#contact .simple-article {
+  text-align: center;
+  font-size: 20px;
+}
+
+.input-wrapper textarea.input {
+  height: 120px;
+}
+
+.input-wrapper input+label {
+  color: #a793a7;
+}
+.input-wrapper span { /* line under inputs */
+  background: #a793a7;
+}
+
+.input-wrapper.focus textarea.input+label+span {
+  height: 120px;
+}
+.input-wrapper.focus textarea.input+label {
+  top: 128px;
+}
+.input-wrapper .input {
+  color: #222;
+}
+.input-wrapper span:after {
+  height: 150px;
+  background-color: #ede9f7;
+}
+
+
+/**************** FOOTER ****************/
 
 footer {
   background-color: #4a404a;
