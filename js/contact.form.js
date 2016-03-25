@@ -7,7 +7,7 @@ $(function() {
 
 		$('.invalid').removeClass('invalid');
 		var msg = 'The following fields should be filled:',
-			successMessage = "Your email is very important to us. One of our representatives will contact you at first chance.",
+			successMessage = "Your email is very important to me. I will contact you at first chance.",
 			error = 0,
 			pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
 
