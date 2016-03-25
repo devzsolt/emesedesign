@@ -62,7 +62,6 @@ $(window).load(function() {
 
   function addClickAction(item) {
     var $portfolioElement = $('#pitem-' + item.id);
-    console.log('addClickAction', item.id, $portfolioElement);
     $portfolioElement.click(launchPhotoSwipe);
   }
 
@@ -81,7 +80,7 @@ $(window).load(function() {
   }
 
   function categoryFilter(item) {
-    console.log('categoryFilter', window.activePortfolioFilter, item);
+    // TODO: analytics event
     if (window.activePortfolioFilter) {
       return (String(item.cat) === window.activePortfolioFilter);
     } else {
