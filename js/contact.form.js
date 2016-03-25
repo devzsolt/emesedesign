@@ -28,7 +28,7 @@ $(function() {
             $.post(url, {
 							data: JSON.stringify({
 								'name': name,
-								'email': email
+								'email': email,
 								'message': message
 							})
 						}, function(data) {
