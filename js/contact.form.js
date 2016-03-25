@@ -19,6 +19,7 @@ $(function() {
         if (error){
         	updateTextPopup('ERROR', msg);
         }else{
+					$('#submit-message-button').prop('disabled', true);
             var url = 'http://api.emesedesign.com/contact',
             	name = $.trim($this.find('input[name="name"]').val()),
             	email = $.trim($this.find('input[name="email"]').val()),
@@ -40,9 +41,11 @@ $(function() {
 		        	$this.append('<input type="reset" class="reset-button"/>');
 		        	$('.reset-button').click().remove();
 		        	$this.find('.focus').removeClass('focus');
+							$('#submit-message-button').prop('disabled', false);
 						})
 						.fail(function handleError(err) {
 							updateTextPopup('ERROR!', 'Something went wrong :( Please send me an email instead to hello@emesedesign.com');
+							$('#submit-message-button').prop('disabled', false);
 						});
         }
 	  	return false;
