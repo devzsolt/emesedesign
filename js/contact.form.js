@@ -19,13 +19,13 @@ $(function() {
         if (error){
         	updateTextPopup('ERROR', msg);
         }else{
-            var url = 'send_mail.php',
+            var url = 'http://api.emesedesign.com/contact',
             	name = $.trim($this.find('input[name="name"]').val()),
             	email = $.trim($this.find('input[name="email"]').val()),
             	subject = ($this.find('input[name="subject"]').length)?$.trim($this.find('input[name="subject"]').val()):'',
             	message = $.trim($this.find('textarea[name="message"]').val());
 
-            $.post(url,{'name':name,'email':email,'subject':subject,'message':message},function(data){
+            $.post(url,{'name':name,'email':email,'message':message},function(data){
 	        	updateTextPopup('THANK YOU!', successMessage);
 	        	$this.append('<input type="reset" class="reset-button"/>');
 	        	$('.reset-button').click().remove();
