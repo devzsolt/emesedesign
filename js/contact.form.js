@@ -26,17 +26,15 @@ $(function() {
             	message = $.trim($this.find('textarea[name="message"]').val());
 
             $.post(url, {
-							data: JSON.stringify({
-								'name': name,
-								'email': email,
-								'message': message
-							})
+							'name': name,
+							'email': email,
+							'message': message
 						}, function(data) {
 		        	updateTextPopup('THANK YOU!', successMessage);
 		        	$this.append('<input type="reset" class="reset-button"/>');
 		        	$('.reset-button').click().remove();
 		        	$this.find('.focus').removeClass('focus');
-						})
+						}, 'json')
 						.fail(function handleError(err) {
 							updateTextPopup('ERROR!', 'Something went wrong :( Please send me an email instead to hello@emesedesign.com');
 						});
