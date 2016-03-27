@@ -334,3 +334,8 @@ $(window).scroll(function(){
          .end().filter("[href='#"+id+"']").parent().addClass("active");
    }
 });
+
+
+$('ul.nav>li').click(function () {
+	$('.button-close').trigger('click')
+})

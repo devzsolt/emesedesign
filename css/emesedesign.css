@@ -42,6 +42,7 @@ a.logo {
   color: #a793a7;
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
+  cursor: default;
 }
 .hamburger-icon {
   display: none;
