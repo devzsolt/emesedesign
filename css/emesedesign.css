@@ -55,6 +55,23 @@ a.logo {
   .hamburger-icon span {
     background: #7e3880;
   }
+  nav>ul>li>a:before {
+    display: none;
+  }
+}
+
+/* different media query to fix buggy theme code without editing original files */
+@media (max-width: 767px) {
+	.sorting-menu.style-1 .responsive-filtration-toggle {
+    display: block;
+  }
+	.sorting-menu.style-1 .responsive-filtration-toggle li {
+    display: inline-block;
+  }
+  .sorting-menu.style-1 a {
+    padding: 0 4px;
+    margin: 0 8px;
+  }
 }
 
 @media (min-width: 992px) {
