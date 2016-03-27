@@ -5,7 +5,7 @@
 /* Version: 1.0 Initial Release*/
 /* Build Date: 06-02-2016*/
 /* Author: LionStyle*/
-/* Website: http://moonart.net.ua/modesto/ 
+/* Website: http://moonart.net.ua/modesto/
 /* Copyright: (C) 2016 */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -67,6 +67,7 @@ $(function() {
 			pageCalculations();
 			scrollCall();
 		},0);
+		// $('body').scrollspy({ target: '#main-navbar' })
 	});
 
 	/*==============================*/
@@ -108,8 +109,8 @@ $(function() {
 
 	function initSwiper(){
 		var initIterator = 0;
-		$('.swiper-container').each(function(){								  
-			var $t = $(this);								  
+		$('.swiper-container').each(function(){
+			var $t = $(this);
 
 			var index = 'swiper-unique-id-'+initIterator;
 
@@ -185,7 +186,7 @@ $(function() {
         if($('.pagination-slider-wrapper[data-pagination-rel="'+container.data('pagination-rel')+'"]').length){
         	var foo = $('.pagination-slider-wrapper[data-pagination-rel="'+container.data('pagination-rel')+'"]');
         	foo.css({'top':(-1)*parseInt(foo.find('.active').attr('data-slide-to'), 10)*foo.parent().height()});
-        }        
+        }
 	}
 
 	$('.slider-click.left').on('click', function(){
@@ -247,7 +248,7 @@ $(function() {
 	});
 
 	//index 6 mousewheel event on slider captions
-	$('.pagination-slider-wrapper').on('mousewheel', function(event) {		
+	$('.pagination-slider-wrapper').on('mousewheel', function(event) {
 		if(event.deltaY>0) {
 			swipers['swiper-'+$('.swiper-container[data-pagination-rel="'+$(this).find('.slider-click-label').data('pagination-rel')+'"]').attr('id')].slidePrev();
 		}
@@ -257,7 +258,7 @@ $(function() {
 	});
 
 	//index 9 mousewheel event on slider
-	$('.boxgallery').on('mousewheel', function(event) {		
+	$('.boxgallery').on('mousewheel', function(event) {
 		event.preventDefault();
 		if(event.deltaY>0) {
 			$(this).find('.slider-click.left').click();
@@ -284,4 +285,52 @@ $(function() {
 	});
 
 
+});
+
+
+
+// Cache selectors
+var lastId,
+    topMenu = $("#main-navbar"),
+    topMenuHeight = topMenu.outerHeight()+15,
+    // All list items
+    menuItems = topMenu.find("a"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+      var item = $($(this).attr("href"));
+      if (item.length) { return item; }
+    });
+
+// Bind click handler to menu items
+// so we can get a fancy scroll animation
+menuItems.click(function(e){
+  var href = $(this).attr("href"),
+      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+  $('html, body').stop().animate({
+      scrollTop: offsetTop
+  }, 300);
+  e.preventDefault();
+});
+
+// Bind to scroll
+$(window).scroll(function(){
+   // Get container scroll position
+   var fromTop = $(this).scrollTop()+topMenuHeight;
+
+   // Get id of current scroll item
+   var cur = scrollItems.map(function(){
+     if ($(this).offset().top < fromTop)
+       return this;
+   });
+   // Get the id of the current element
+   cur = cur[cur.length-1];
+   var id = cur && cur.length ? cur[0].id : "";
+
+   if (lastId !== id) {
+       lastId = id;
+       // Set/remove active class
+       menuItems
+         .parent().removeClass("active")
+         .end().filter("[href='#"+id+"']").parent().addClass("active");
+   }
 });
