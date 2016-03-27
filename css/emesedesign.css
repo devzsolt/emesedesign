@@ -52,6 +52,9 @@ a.logo {
   .hamburger-icon {
     display: inline-block;
   }
+  .hamburger-icon span {
+    background: #7e3880;
+  }
 }
 
 @media (min-width: 992px) {
@@ -117,7 +120,7 @@ a.logo {
   height: 120px;
 }
 
-.input-wrapper input+label {
+.input-wrapper .input+label {
   color: #a793a7;
 }
 .input-wrapper span { /* line under inputs */
