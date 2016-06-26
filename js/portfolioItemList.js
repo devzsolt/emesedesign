@@ -9,7 +9,9 @@
 
 $(window).load(function() {
 
-  var ITEMS = [  
+  var ITEMS = [
+    { id: 'goldfish', title: 'Goldfish', desc: 'Digital art for fun',
+      type: 'jpg', cat: 3, dimM: '800x471', dimD: '1920x1131' },
     { id: 'jellyfish', title: 'Jellyfish', desc: 'Digital art for fun',
       type: 'png', cat: 3, dimM: '800x450', dimD: '1920x1080' },
     { id: 'fantasyzooweb', title: 'Fantasy Zoo', desc: 'Website for an imaginery zoo',
