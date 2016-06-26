@@ -12,6 +12,8 @@ $(window).load(function() {
   var ITEMS = [
     { id: 'goldfish', title: 'Goldfish', desc: 'Digital art for fun',
       type: 'jpg', cat: 3, dimM: '800x471', dimD: '1920x1131' },
+    { id: 'holidaylogo', title: '1 Day Holiday logo', desc: 'Youthful and simple logo for a travel agency',
+      type: 'PNG', cat: 3, dimM: '800x800', dimD: '1920x1920' },
     { id: 'jellyfish', title: 'Jellyfish', desc: 'Digital art for fun',
       type: 'png', cat: 3, dimM: '800x450', dimD: '1920x1080' },
     { id: 'fantasyzooweb', title: 'Fantasy Zoo', desc: 'Website for an imaginery zoo',
