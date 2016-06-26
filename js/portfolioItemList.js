@@ -16,6 +16,8 @@ $(window).load(function() {
       type: 'png', cat: 2, dimM: '800x800', dimD: '1920x1920' },
     { id: 'jellyfish', title: 'Jellyfish', desc: 'Digital art for fun',
       type: 'png', cat: 3, dimM: '800x450', dimD: '1920x1080' },
+    { id: 'cat', title: 'Cat', desc: 'Digital art for fun',
+      type: 'jpg', cat: 3, dimM: '800x853', dimD: '1920x2048' },
     { id: 'fantasyzooweb', title: 'Fantasy Zoo', desc: 'Website for an imaginery zoo',
       type: 'jpg', cat: 1, dimM: '800x800', dimD: '1920x1514' },
     { id: 'surranocoming', title: 'Surrano', desc: 'Coming soon page for a startup',
