@@ -24,7 +24,7 @@ $(window).load(function() {
         type: 'jpg',
         cat: 3,
         dimM: '800x800',
-        dimD: '1000x1000'
+        dimD: '1000x733'
     }, {
         id: 'pentictonpainter',
         title: 'Penticton painter',
