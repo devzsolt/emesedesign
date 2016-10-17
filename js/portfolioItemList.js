@@ -10,153 +10,158 @@
 $(window).load(function() {
 
     var ITEMS = [{
-            id: 'pentictonpainter',
-            title: 'Penticton painter',
-            desc: 'Website for a painter in Canada',
-            type: 'jpg',
-            cat: 1,
-            dimM: '800x800',
-            dimD: '1920x4054'
-        },
-
-        {
-            id: 'monsters',
-            title: 'Monsters',
-            desc: 'Digital art for fun',
-            type: 'jpg',
-            cat: 3,
-            dimM: '800x800',
-            dimD: '1920x1920'
-        }, {
-            id: 'goldfish',
-            title: 'Goldfish',
-            desc: 'Digital art for fun',
-            type: 'jpg',
-            cat: 3,
-            dimM: '800x471',
-            dimD: '1920x1131'
-        }, {
-            id: 'holidaylogo',
-            title: '1 Day Holiday logo',
-            desc: 'Youthful and simple logo for a travel agency',
-            type: 'png',
-            cat: 2,
-            dimM: '800x800',
-            dimD: '1920x1920'
-        }, {
-            id: 'jellyfish',
-            title: 'Jellyfish',
-            desc: 'Digital art for fun',
-            type: 'png',
-            cat: 3,
-            dimM: '800x450',
-            dimD: '1920x1080'
-        }, {
-            id: 'cat',
-            title: 'Cat',
-            desc: 'Digital art for fun',
-            type: 'jpg',
-            cat: 3,
-            dimM: '800x853',
-            dimD: '1920x2048'
-        }, {
-            id: 'fantasyzooweb',
-            title: 'Fantasy Zoo',
-            desc: 'Website for an imaginery zoo',
-            type: 'jpg',
-            cat: 1,
-            dimM: '800x800',
-            dimD: '1920x1514'
-        }, {
-            id: 'surranocoming',
-            title: 'Surrano',
-            desc: 'Coming soon page for a startup',
-            type: 'jpg',
-            cat: 1,
-            dimM: '800x415',
-            dimD: '1920x996'
-        }, {
-            id: 'pc_page',
-            title: 'PC design',
-            desc: '',
-            type: 'jpg',
-            cat: 1,
-            dimM: '640x800',
-            dimD: '1200x1500'
-        }, {
-            id: 'fantasyzoologo',
-            title: 'Fantasy Zoo logo',
-            desc: 'Logo for an imaginery zoo',
-            type: 'png',
-            cat: 2,
-            dimM: '800x800',
-            dimD: '1920x1920'
-        }, {
-            id: 'mathmonsterangry',
-            title: 'Math Monster',
-            desc: 'iOS app icon for a kids\' math game (for 6-12yrs old)',
-            type: 'png',
-            cat: 2,
-            dimM: '800x800',
-            dimD: '1920x1920'
-        }, {
-            id: 'parkitectlogo',
-            title: 'Parkitect logo',
-            desc: 'Logo for an architecture company that designs, sells and installs playgrounds',
-            type: 'png',
-            cat: 2,
-            dimM: '800x800',
-            dimD: '1920x1920'
-        }, {
-            id: 'pava',
-            title: 'Peacock',
-            desc: 'Digital art for fun',
-            type: 'jpg',
-            cat: 3,
-            dimM: '500x800',
-            dimD: '1200x1920'
-        }, {
-            id: 'fox',
-            title: 'Fox',
-            desc: 'Digital art for fun',
-            type: 'jpg',
-            cat: 3,
-            dimM: '600x800',
-            dimD: '1440x1920'
-        }, {
-            id: 'zebradigi',
-            title: 'Zebra',
-            desc: 'Digital art for fun',
-            type: 'jpg',
-            cat: 3,
-            dimM: '800x800',
-            dimD: '1920x1920'
-        }, {
-            id: 'zebrac',
-            title: 'Zebra drawing',
-            desc: 'A/4 pencil drawing',
-            type: 'jpg',
-            cat: 3,
-            dimM: '572x800',
-            dimD: '1373x1920'
-        }, {
-            id: 'buddha',
-            title: 'Buddha',
-            desc: 'A/3 pencil drawing',
-            type: 'jpg',
-            cat: 3,
-            dimM: '581x800',
-            dimD: '1395x1920'
-        }, {
-            id: 'balerina',
-            title: 'Ballerina',
-            desc: 'A/3 pencil drawing',
-            type: 'jpg',
-            cat: 3,
-            dimM: '600x800',
-            dimD: '1440x1920'
-        }
-    ];
+        id: 'pentictonpainter',
+        title: 'Penticton painter',
+        desc: 'Website for a painter in Canada',
+        type: 'jpg',
+        cat: 1,
+        dimM: '800x800',
+        dimD: '1920x4054'
+    }, {
+        id: 'pentictonpainterlogo',
+        title: 'Frank\'s painting logo',
+        desc: 'Simple clean logo with symbols - house, brush and red color for a Canadian painter',
+        type: 'png',
+        cat: 2,
+        dimM: '800x800',
+        dimD: '1920x1920'
+    }, {
+        id: 'monsters',
+        title: 'Monsters',
+        desc: 'Digital art for fun',
+        type: 'jpg',
+        cat: 3,
+        dimM: '800x800',
+        dimD: '1920x1920'
+    }, {
+        id: 'goldfish',
+        title: 'Goldfish',
+        desc: 'Digital art for fun',
+        type: 'jpg',
+        cat: 3,
+        dimM: '800x471',
+        dimD: '1920x1131'
+    }, {
+        id: 'holidaylogo',
+        title: '1 Day Holiday logo',
+        desc: 'Youthful and simple logo for a travel agency',
+        type: 'png',
+        cat: 2,
+        dimM: '800x800',
+        dimD: '1920x1920'
+    }, {
+        id: 'jellyfish',
+        title: 'Jellyfish',
+        desc: 'Digital art for fun',
+        type: 'png',
+        cat: 3,
+        dimM: '800x450',
+        dimD: '1920x1080'
+    }, {
+        id: 'cat',
+        title: 'Cat',
+        desc: 'Digital art for fun',
+        type: 'jpg',
+        cat: 3,
+        dimM: '800x853',
+        dimD: '1920x2048'
+    }, {
+        id: 'fantasyzooweb',
+        title: 'Fantasy Zoo',
+        desc: 'Website for an imaginery zoo',
+        type: 'jpg',
+        cat: 1,
+        dimM: '800x800',
+        dimD: '1920x1514'
+    }, {
+        id: 'surranocoming',
+        title: 'Surrano',
+        desc: 'Coming soon page for a startup',
+        type: 'jpg',
+        cat: 1,
+        dimM: '800x415',
+        dimD: '1920x996'
+    }, {
+        id: 'pc_page',
+        title: 'PC design',
+        desc: '',
+        type: 'jpg',
+        cat: 1,
+        dimM: '640x800',
+        dimD: '1200x1500'
+    }, {
+        id: 'fantasyzoologo',
+        title: 'Fantasy Zoo logo',
+        desc: 'Logo for an imaginery zoo',
+        type: 'png',
+        cat: 2,
+        dimM: '800x800',
+        dimD: '1920x1920'
+    }, {
+        id: 'mathmonsterangry',
+        title: 'Math Monster',
+        desc: 'iOS app icon for a kids\' math game (for 6-12yrs old)',
+        type: 'png',
+        cat: 2,
+        dimM: '800x800',
+        dimD: '1920x1920'
+    }, {
+        id: 'parkitectlogo',
+        title: 'Parkitect logo',
+        desc: 'Logo for an architecture company that designs, sells and installs playgrounds',
+        type: 'png',
+        cat: 2,
+        dimM: '800x800',
+        dimD: '1920x1920'
+    }, {
+        id: 'pava',
+        title: 'Peacock',
+        desc: 'Digital art for fun',
+        type: 'jpg',
+        cat: 3,
+        dimM: '500x800',
+        dimD: '1200x1920'
+    }, {
+        id: 'fox',
+        title: 'Fox',
+        desc: 'Digital art for fun',
+        type: 'jpg',
+        cat: 3,
+        dimM: '600x800',
+        dimD: '1440x1920'
+    }, {
+        id: 'zebradigi',
+        title: 'Zebra',
+        desc: 'Digital art for fun',
+        type: 'jpg',
+        cat: 3,
+        dimM: '800x800',
+        dimD: '1920x1920'
+    }, {
+        id: 'zebrac',
+        title: 'Zebra drawing',
+        desc: 'A/4 pencil drawing',
+        type: 'jpg',
+        cat: 3,
+        dimM: '572x800',
+        dimD: '1373x1920'
+    }, {
+        id: 'buddha',
+        title: 'Buddha',
+        desc: 'A/3 pencil drawing',
+        type: 'jpg',
+        cat: 3,
+        dimM: '581x800',
+        dimD: '1395x1920'
+    }, {
+        id: 'balerina',
+        title: 'Ballerina',
+        desc: 'A/3 pencil drawing',
+        type: 'jpg',
+        cat: 3,
+        dimM: '600x800',
+        dimD: '1440x1920'
+    }];
 
     function initPortfolioItems() {
         ITEMS.forEach(renderThumbnail);
