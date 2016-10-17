@@ -10,6 +10,22 @@
 $(window).load(function() {
 
     var ITEMS = [{
+        id: 'wolf',
+        title: 'Wolf',
+        desc: 'Digital art - you can buy it at my Etsy shop',
+        type: 'jpg',
+        cat: 3,
+        dimM: '800x800',
+        dimD: '1000x1000'
+    }, {
+        id: 'catathome',
+        title: 'Cat at home',
+        desc: 'Digital art - you can buy it at my Etsy shop',
+        type: 'jpg',
+        cat: 3,
+        dimM: '800x800',
+        dimD: '1000x1000'
+    }, {
         id: 'pentictonpainter',
         title: 'Penticton painter',
         desc: 'Website for a painter in Canada',
@@ -28,11 +44,11 @@ $(window).load(function() {
     }, {
         id: 'monsters',
         title: 'Monsters',
-        desc: 'Digital art for fun',
+        desc: 'Digital art - you can buy it at my Etsy shop',
         type: 'jpg',
         cat: 3,
         dimM: '800x800',
-        dimD: '1920x1920'
+        dimD: '1000x1000'
     }, {
         id: 'goldfish',
         title: 'Goldfish',
