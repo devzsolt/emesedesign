@@ -19,7 +19,7 @@ $(window).load(function () {
             dimD: '1000x1000'
     },
         {
-            id: 'justmove',
+            id: 'justmovelogo',
             title: 'Just Move blog',
             desc: 'This logo looks like a stamp. It is symbolising the travelling and resembles a stamp in a passport.',
             type: 'jpg',
