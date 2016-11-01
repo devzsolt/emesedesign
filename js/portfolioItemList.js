@@ -7,176 +7,195 @@
     desktop full   up to 1920x1920   ID_D.jpg/png
 */
 
-$(window).load(function() {
+$(window).load(function () {
 
     var ITEMS = [{
-        id: 'wolf',
-        title: 'Wolf',
-        desc: 'Digital art - you can buy it at my Etsy shop',
-        type: 'jpg',
-        cat: 3,
-        dimM: '800x800',
-        dimD: '1000x1000'
+            id: 'wolf',
+            title: 'Wolf',
+            desc: 'Digital art - you can buy it at my Etsy shop',
+            type: 'jpg',
+            cat: 3,
+            dimM: '800x800',
+            dimD: '1000x1000'
+    },
+        {
+            id: 'justmove',
+            title: 'Just Move blog',
+            desc: 'This logo looks like a stamp. It is symbolising the travelling and resembles a stamp in a passport.',
+            type: 'jpg',
+            cat: 2,
+            dimM: '800x800',
+            dimD: '1000x1000'
+    },
+        {
+            id: 'owl',
+            title: 'Owl',
+            desc: 'Digital art - you can buy it at my Etsy shop',
+            type: 'jpg',
+            cat: 3,
+            dimM: '571x800',
+            dimD: '714x1000'
+    },
+        {
+            id: 'catathome',
+            title: 'Cat at home',
+            desc: 'Digital art - you can buy it at my Etsy shop',
+            type: 'jpg',
+            cat: 3,
+            dimM: '800x800',
+            dimD: '1000x733'
     }, {
-        id: 'catathome',
-        title: 'Cat at home',
-        desc: 'Digital art - you can buy it at my Etsy shop',
-        type: 'jpg',
-        cat: 3,
-        dimM: '800x800',
-        dimD: '1000x733'
+            id: 'pentictonpainter',
+            title: 'Penticton painter',
+            desc: 'Website for a painter in Canada',
+            type: 'jpg',
+            cat: 1,
+            dimM: '800x800',
+            dimD: '1920x4054'
     }, {
-        id: 'pentictonpainter',
-        title: 'Penticton painter',
-        desc: 'Website for a painter in Canada',
-        type: 'jpg',
-        cat: 1,
-        dimM: '800x800',
-        dimD: '1920x4054'
+            id: 'pentictonpainterlogo',
+            title: 'Frank\'s painting logo',
+            desc: 'Simple clean logo with symbols - house, brush and red color for a Canadian painter',
+            type: 'png',
+            cat: 2,
+            dimM: '800x800',
+            dimD: '1920x1920'
     }, {
-        id: 'pentictonpainterlogo',
-        title: 'Frank\'s painting logo',
-        desc: 'Simple clean logo with symbols - house, brush and red color for a Canadian painter',
-        type: 'png',
-        cat: 2,
-        dimM: '800x800',
-        dimD: '1920x1920'
+            id: 'monsters',
+            title: 'Monsters',
+            desc: 'Digital art - you can buy it at my Etsy shop',
+            type: 'jpg',
+            cat: 3,
+            dimM: '800x800',
+            dimD: '1000x1000'
     }, {
-        id: 'monsters',
-        title: 'Monsters',
-        desc: 'Digital art - you can buy it at my Etsy shop',
-        type: 'jpg',
-        cat: 3,
-        dimM: '800x800',
-        dimD: '1000x1000'
+            id: 'goldfish',
+            title: 'Goldfish',
+            desc: 'Digital art for fun',
+            type: 'jpg',
+            cat: 3,
+            dimM: '800x471',
+            dimD: '1920x1131'
     }, {
-        id: 'goldfish',
-        title: 'Goldfish',
-        desc: 'Digital art for fun',
-        type: 'jpg',
-        cat: 3,
-        dimM: '800x471',
-        dimD: '1920x1131'
+            id: 'holidaylogo',
+            title: '1 Day Holiday logo',
+            desc: 'Youthful and simple logo for a travel agency',
+            type: 'png',
+            cat: 2,
+            dimM: '800x800',
+            dimD: '1920x1920'
     }, {
-        id: 'holidaylogo',
-        title: '1 Day Holiday logo',
-        desc: 'Youthful and simple logo for a travel agency',
-        type: 'png',
-        cat: 2,
-        dimM: '800x800',
-        dimD: '1920x1920'
+            id: 'jellyfish',
+            title: 'Jellyfish',
+            desc: 'Digital art for fun',
+            type: 'png',
+            cat: 3,
+            dimM: '800x450',
+            dimD: '1920x1080'
     }, {
-        id: 'jellyfish',
-        title: 'Jellyfish',
-        desc: 'Digital art for fun',
-        type: 'png',
-        cat: 3,
-        dimM: '800x450',
-        dimD: '1920x1080'
+            id: 'cat',
+            title: 'Cat',
+            desc: 'Digital art for fun',
+            type: 'jpg',
+            cat: 3,
+            dimM: '800x853',
+            dimD: '1920x2048'
     }, {
-        id: 'cat',
-        title: 'Cat',
-        desc: 'Digital art for fun',
-        type: 'jpg',
-        cat: 3,
-        dimM: '800x853',
-        dimD: '1920x2048'
+            id: 'fantasyzooweb',
+            title: 'Fantasy Zoo',
+            desc: 'Website for an imaginery zoo',
+            type: 'jpg',
+            cat: 1,
+            dimM: '800x800',
+            dimD: '1920x1514'
     }, {
-        id: 'fantasyzooweb',
-        title: 'Fantasy Zoo',
-        desc: 'Website for an imaginery zoo',
-        type: 'jpg',
-        cat: 1,
-        dimM: '800x800',
-        dimD: '1920x1514'
+            id: 'surranocoming',
+            title: 'Surrano',
+            desc: 'Coming soon page for a startup',
+            type: 'jpg',
+            cat: 1,
+            dimM: '800x415',
+            dimD: '1920x996'
     }, {
-        id: 'surranocoming',
-        title: 'Surrano',
-        desc: 'Coming soon page for a startup',
-        type: 'jpg',
-        cat: 1,
-        dimM: '800x415',
-        dimD: '1920x996'
+            id: 'pc_page',
+            title: 'PC design',
+            desc: '',
+            type: 'jpg',
+            cat: 1,
+            dimM: '640x800',
+            dimD: '1200x1500'
     }, {
-        id: 'pc_page',
-        title: 'PC design',
-        desc: '',
-        type: 'jpg',
-        cat: 1,
-        dimM: '640x800',
-        dimD: '1200x1500'
+            id: 'fantasyzoologo',
+            title: 'Fantasy Zoo logo',
+            desc: 'Logo for an imaginery zoo',
+            type: 'png',
+            cat: 2,
+            dimM: '800x800',
+            dimD: '1920x1920'
     }, {
-        id: 'fantasyzoologo',
-        title: 'Fantasy Zoo logo',
-        desc: 'Logo for an imaginery zoo',
-        type: 'png',
-        cat: 2,
-        dimM: '800x800',
-        dimD: '1920x1920'
+            id: 'mathmonsterangry',
+            title: 'Math Monster',
+            desc: 'iOS app icon for a kids\' math game (for 6-12yrs old)',
+            type: 'png',
+            cat: 2,
+            dimM: '800x800',
+            dimD: '1920x1920'
     }, {
-        id: 'mathmonsterangry',
-        title: 'Math Monster',
-        desc: 'iOS app icon for a kids\' math game (for 6-12yrs old)',
-        type: 'png',
-        cat: 2,
-        dimM: '800x800',
-        dimD: '1920x1920'
+            id: 'parkitectlogo',
+            title: 'Parkitect logo',
+            desc: 'Logo for an architecture company that designs, sells and installs playgrounds',
+            type: 'png',
+            cat: 2,
+            dimM: '800x800',
+            dimD: '1920x1920'
     }, {
-        id: 'parkitectlogo',
-        title: 'Parkitect logo',
-        desc: 'Logo for an architecture company that designs, sells and installs playgrounds',
-        type: 'png',
-        cat: 2,
-        dimM: '800x800',
-        dimD: '1920x1920'
+            id: 'pava',
+            title: 'Peacock',
+            desc: 'Digital art for fun',
+            type: 'jpg',
+            cat: 3,
+            dimM: '500x800',
+            dimD: '1200x1920'
     }, {
-        id: 'pava',
-        title: 'Peacock',
-        desc: 'Digital art for fun',
-        type: 'jpg',
-        cat: 3,
-        dimM: '500x800',
-        dimD: '1200x1920'
+            id: 'fox',
+            title: 'Fox',
+            desc: 'Digital art for fun',
+            type: 'jpg',
+            cat: 3,
+            dimM: '600x800',
+            dimD: '1440x1920'
     }, {
-        id: 'fox',
-        title: 'Fox',
-        desc: 'Digital art for fun',
-        type: 'jpg',
-        cat: 3,
-        dimM: '600x800',
-        dimD: '1440x1920'
+            id: 'zebradigi',
+            title: 'Zebra',
+            desc: 'Digital art for fun',
+            type: 'jpg',
+            cat: 3,
+            dimM: '800x800',
+            dimD: '1920x1920'
     }, {
-        id: 'zebradigi',
-        title: 'Zebra',
-        desc: 'Digital art for fun',
-        type: 'jpg',
-        cat: 3,
-        dimM: '800x800',
-        dimD: '1920x1920'
+            id: 'zebrac',
+            title: 'Zebra drawing',
+            desc: 'A/4 pencil drawing',
+            type: 'jpg',
+            cat: 3,
+            dimM: '572x800',
+            dimD: '1373x1920'
     }, {
-        id: 'zebrac',
-        title: 'Zebra drawing',
-        desc: 'A/4 pencil drawing',
-        type: 'jpg',
-        cat: 3,
-        dimM: '572x800',
-        dimD: '1373x1920'
+            id: 'buddha',
+            title: 'Buddha',
+            desc: 'A/3 pencil drawing',
+            type: 'jpg',
+            cat: 3,
+            dimM: '581x800',
+            dimD: '1395x1920'
     }, {
-        id: 'buddha',
-        title: 'Buddha',
-        desc: 'A/3 pencil drawing',
-        type: 'jpg',
-        cat: 3,
-        dimM: '581x800',
-        dimD: '1395x1920'
-    }, {
-        id: 'balerina',
-        title: 'Ballerina',
-        desc: 'A/3 pencil drawing',
-        type: 'jpg',
-        cat: 3,
-        dimM: '600x800',
-        dimD: '1440x1920'
+            id: 'balerina',
+            title: 'Ballerina',
+            desc: 'A/3 pencil drawing',
+            type: 'jpg',
+            cat: 3,
+            dimM: '600x800',
+            dimD: '1440x1920'
     }];
 
     function initPortfolioItems() {
@@ -202,7 +221,7 @@ $(window).load(function() {
         var filteredList = ITEMS.filter(categoryFilter);
         var photoSwipeItemList = filteredList.map(createPhotoSwipeItem);
         var selectedIndex = 0;
-        filteredList.forEach(function(item, index) {
+        filteredList.forEach(function (item, index) {
             if (item.id === id) {
                 selectedIndex = index;
             }
@@ -253,7 +272,7 @@ $(window).load(function() {
             imageSrcWillChange;
 
         // beforeResize event fires each time size of gallery viewport updates
-        gallery.listen('beforeResize', function() {
+        gallery.listen('beforeResize', function () {
             // calculate real pixels when size changes
             realViewportWidth = gallery.viewportSize.x /* * window.devicePixelRatio*/ ;
 
@@ -281,7 +300,7 @@ $(window).load(function() {
 
 
         // gettingData event fires each time PhotoSwipe retrieves image source & size
-        gallery.listen('gettingData', function(index, item) {
+        gallery.listen('gettingData', function (index, item) {
             // Set image source & size based on real viewport width
             if (useLargeImages) {
                 item.src = item.originalImage.src;
