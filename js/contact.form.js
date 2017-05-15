@@ -20,7 +20,7 @@ $(function() {
         	updateTextPopup('ERROR', msg);
         }else{
 					$('#submit-message-button').prop('disabled', true);
-            var url = 'http://api.emesedesign.com/contact',
+            var url = 'http://mail.emesedesign.com/contact',
             	name = $.trim($this.find('input[name="name"]').val()),
             	email = $.trim($this.find('input[name="email"]').val()),
             	subject = ($this.find('input[name="subject"]').length)?$.trim($this.find('input[name="subject"]').val()):'',
