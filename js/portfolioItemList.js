@@ -10,6 +10,24 @@
 $(window).load(function () {
 
     var ITEMS = [{
+            id: 'szaborenata',
+            title: 'Renata Szabo psychologist website',
+            desc: 'This responsive website was made for a psychologist. When I designed this site I focused on making it in harmony with her personality.',
+            type: 'jpg',
+            cat: 1,
+            dimM: '800x800',
+            dimD: '1920x1166'
+    },
+        {
+            id: 'tsz',
+            title: 'Tiszta Szekely logo',
+            desc: 'This logo was made for a business that deals with rural tourism. The symbolism of the given region inspired my work.',
+            type: 'jpg',
+            cat: 2,
+            dimM: '800x800',
+            dimD: '1000x1000'
+    },
+        {
             id: 'wolf',
             title: 'Wolf',
             desc: 'Digital art - you can buy it at my Etsy shop',
