@@ -10,6 +10,15 @@
 $(window).load(function () {
 
     var ITEMS = [{
+            id: 'bodypiercing',
+            title: 'Body Piercing & Dermal Anchor Implant branding',
+            desc: 'I made the branding of a piercing business. In the logo I combined the shapes which were important for the business owners. On the business card and the flyer I chose the colors and the font faces which are in integrity with the logo style.',
+            type: 'jpg',
+            cat: 2,
+            dimM: '800x800',
+            dimD: '1920x1423'
+    },
+        {
             id: 'szaborenata',
             title: 'Renata Szabo psychologist website',
             desc: 'This responsive website was made for a psychologist. When I designed this site I focused on making it in harmony with her personality.',
