@@ -9,7 +9,16 @@
 
 $(window).load(function () {
 
-    var ITEMS = [{
+    var ITEMS = [ {
+            id: 'squirrel',
+            title: 'Squirrel with her treasure',
+            desc: 'Digital art',
+            type: 'jpg',
+            cat: 3,
+            dimM: '1120x800',
+            dimD: '1400x1000'
+    },
+        {
             id: 'bodypiercing',
             title: 'Body Piercing & Dermal Anchor Implant branding',
             desc: 'I made the branding of a piercing business. In the logo I combined the shapes which were important for the business owners. On the business card and the flyer I chose the colors and the font faces which are in integrity with the logo style.',
