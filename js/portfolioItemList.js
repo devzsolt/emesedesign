@@ -10,6 +10,15 @@
 $(window).load(function () {
 
     var ITEMS = [ {
+            id: 'fox2',
+            title: 'Sleepy fox',
+            desc: 'Digital art',
+            type: 'jpg',
+            cat: 3,
+            dimM: '800x800',
+            dimD: '1000x1000'
+    },        
+        {
             id: 'squirrel',
             title: 'Squirrel with her treasure',
             desc: 'Digital art',
